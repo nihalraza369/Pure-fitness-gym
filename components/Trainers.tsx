@@ -31,11 +31,11 @@ export default function Trainers() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
-          className="mb-4 font-display text-5xl leading-[0.9] text-bone md:text-6xl"
+          className="mb-6 flex flex-col gap-3 font-display text-4xl leading-[0.9] tracking-[0.08em] text-bone md:text-6xl"
         >
-          THE FULL
-          <br />
-          <span className="text-blood">TEAM.</span>
+          <span>TRAIN</span>
+          <span className="text-blood">WITHOUT</span>
+          <span>LIMITS</span>
         </motion.h2>
         <p className="mb-14 max-w-md text-ash md:mb-20">
           Six qualified coaches across two dedicated floors — men&rsquo;s and
