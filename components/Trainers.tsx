@@ -11,20 +11,7 @@ const TRAINERS = [
     side: "Men's Floor",
     img: "/images/trainer-m1.jpg",
   },
-  {
-    name: "Salman Khan",
-    role: "CrossFit & HIIT Coach",
-    exp: "Certified CrossFit coach. Builds conditioning alongside strength for real-world fitness.",
-    side: "Men's Floor",
-    img: "/images/trainer-m2.jpg",
-  },
-  {
-    name: "Faisal Raza",
-    role: "Youth & Bodybuilding Coach",
-    exp: "Trains younger members with a focus on technique, growth and discipline.",
-    side: "Men's Floor",
-    img: "/images/trainer-m3.jpg",
-  },
+  
   {
     name: "Ayesha Siddiqui",
     role: "Head Coach · Ladies Floor",
@@ -32,20 +19,7 @@ const TRAINERS = [
     side: "Ladies Floor",
     img: "/images/trainer-f1.jpg",
   },
-  {
-    name: "Mariam Iqbal",
-    role: "Fitness & Cardio Coach",
-    exp: "Specialist in fat-loss programming, treadmill intervals and bodyweight circuits.",
-    side: "Ladies Floor",
-    img: "/images/trainer-f2.jpg",
-  },
-  {
-    name: "Hina Shah",
-    role: "Zumba & Dance Fitness Coach",
-    exp: "Certified Zumba instructor bringing energy, rhythm and fun to every class.",
-    side: "Ladies Floor",
-    img: "/images/trainer-f3.jpg",
-  },
+  
 ];
 
 export default function Trainers() {

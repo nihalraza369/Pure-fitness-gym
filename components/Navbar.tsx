@@ -13,6 +13,10 @@ import {
   Dumbbell,
   ArrowRight,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/Products";
+
+const WA_LINK =
+  "https://wa.me/923352846360?text=Salam%20Pure%20Fitness%20Gym!%20I%20want%20to%20ask%20about%20membership.";
 
 const LINKS = [
   { label: "Services", href: "/#services", section: "services" },
@@ -28,9 +32,14 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState<string | null>(null);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 24);
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(total > 0 ? Math.min(window.scrollY / total, 1) : 0);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -75,6 +84,14 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
+      {/* Scroll progress bar */}
+      <div className="absolute top-0 left-0 right-0 h-0.5 bg-transparent">
+        <div
+          className="h-full bg-blood transition-[width] duration-150 ease-out"
+          style={{ width: `${progress * 100}%` }}
+        />
+      </div>
+
       {/* Top utility bar — desktop only */}
       <div className="hidden border-b border-iron/70 bg-ink lg:block">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-10 py-2 text-xs text-ash">
@@ -86,6 +103,10 @@ export default function Navbar() {
             <span className="flex items-center gap-1.5">
               <Clock size={13} className="text-blood" />
               Mon–Sat, 7 AM – 1 AM
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Dumbbell size={13} className="text-blood" />
+              Ladies 12 PM – 6 PM
             </span>
           </div>
           <span className="flex items-center gap-1.5 font-semibold text-bone">
@@ -119,8 +140,9 @@ export default function Navbar() {
 
           <nav className="hidden items-center gap-7 xl:flex">
             {LINKS.map((link) => {
-              const isActive =
-                active === link.section || isOnPage(link.href);
+              const isActive = link.section
+                ? active === link.section
+                : isOnPage(link.href);
               return (
                 <a
                   key={link.href}
@@ -141,6 +163,15 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden items-center gap-3 xl:flex">
+            <a
+              href={WA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat on WhatsApp"
+              className="flex h-10 w-10 items-center justify-center rounded-sm border border-emerald-500/40 bg-emerald-500/10 text-bone transition-colors hover:bg-emerald-500/20"
+            >
+              <WhatsAppIcon size={18} />
+            </a>
             <a
               href="tel:03352846360"
               className="flex items-center gap-2 text-sm font-semibold text-bone transition-colors hover:text-blood"
@@ -191,8 +222,9 @@ export default function Navbar() {
             <div className="mx-auto flex max-w-7xl flex-col px-6 py-5">
               <nav className="flex flex-col">
                 {LINKS.map((link, i) => {
-                  const isActive =
-                    active === link.section || isOnPage(link.href);
+                  const isActive = link.section
+                    ? active === link.section
+                    : isOnPage(link.href);
                   return (
                     <motion.a
                       key={link.href}
@@ -221,6 +253,15 @@ export default function Navbar() {
                   0335 2846360
                 </a>
                 <a
+                  href={WA_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 rounded-sm border border-emerald-500/40 bg-emerald-500/10 px-5 py-3.5 text-sm font-semibold text-bone transition-colors hover:bg-emerald-500/20"
+                >
+                  <WhatsAppIcon size={16} />
+                  WhatsApp
+                </a>
+                <a
                   href="/#location"
                   onClick={() => setOpen(false)}
                   className="flex items-center justify-center gap-2 rounded-sm bg-blood px-5 py-3.5 text-sm font-bold uppercase tracking-wider text-bone"
@@ -228,6 +269,10 @@ export default function Navbar() {
                   <Dumbbell size={16} />
                   Join Now
                 </a>
+                <p className="mt-2 flex items-center justify-center gap-1.5 text-xs text-ash">
+                  <MapPin size={13} className="text-blood" />
+                  Block 13-D/3, Gulshan-e-Iqbal, Karachi
+                </p>
               </div>
             </div>
           </motion.div>
