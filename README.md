@@ -1,4 +1,4 @@
-# Pure Fitness Gym — Website
+# Fitness Demon — Website
 
 Next.js 14 (App Router) + TypeScript + Tailwind CSS + Framer Motion.
 
@@ -36,11 +36,11 @@ Ya isko **Vercel** (Next.js banane walo ka platform) par free deploy kar sakte h
 - Hero background image + poore site ki dusri image Unsplash se hai (free-to-use license). Agar apni gym ki asli photos lagani hon:
   - `components/Hero.tsx` mein `src="https://images.unsplash.com/..."` ko apni image URL se replace karein, ya
   - Apni photo `public/` folder mein daal kar `src="/apni-photo.jpg"` likh dein.
-- Hours section aur "Open Now" badge apne aap current din/waqt ke hisaab se update hote hain (Mon–Sat 7am–1am, Sunday closed).
-- Google Maps embed already Pure Fitness Gym ke address se link hai.
+- Hours section aur "Open Now" badge apne aap current din/waqt ke hisaab se update hote hain (Mon-Tue 24h, Wed-Sat 6am-12am, Sunday closed).
+- Google Maps embed already Fitness Demon ke address se link hai.
 
 ## Customize karna ho to
 
-- Phone number: `0335 2846360` — `Navbar.tsx`, `Location.tsx`, `Footer.tsx` mein search karein.
+- Phone number: `0300 8141533` — `Navbar.tsx`, `Location.tsx`, `Footer.tsx` mein search karein.
 - Reviews / testimonials: `components/Reviews.tsx`
 - Services list: `components/Services.tsx` aur `components/Marquee.tsx`

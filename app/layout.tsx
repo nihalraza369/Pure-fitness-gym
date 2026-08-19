@@ -17,16 +17,16 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Pure Fitness Gym | Gulshan-e-Iqbal, Karachi",
+  title: "Fitness Demon | Mustafabad, Lahore",
   description:
-    "Pure Fitness Gym in Gulshan-e-Iqbal, Karachi — weightlifting, CrossFit, cardio, Zumba, personal training and more. Open 7am–1am, 7 days a week.",
+    "Fitness Demon in Mustafabad, Lahore — weightlifting, CrossFit, cardio, Zumba, personal training and more. Open 24 hours Mon-Tue, 6am-12am Wed-Sat.",
   keywords: [
-    "Pure Fitness Gym",
-    "Gym in Gulshan-e-Iqbal",
-    "Gym in Karachi",
-    "Weightlifting Karachi",
-    "CrossFit Karachi",
-    "Zumba classes Karachi",
+    "Fitness Demon",
+    "Gym in Mustafabad",
+    "Gym in Lahore",
+    "Weightlifting Lahore",
+    "CrossFit Lahore",
+    "Zumba classes Lahore",
   ],
 };
 

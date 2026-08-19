@@ -17,7 +17,7 @@ const TESTIMONIALS = [
   {
     name: "Hameed Ullah",
     tag: "Member since day one",
-    body: "The best value gym in Gulshan — good atmosphere that works well for both male and female members.",
+    body: "The best value gym in Mustafabad — good atmosphere that works well for both male and female members.",
   },
   {
     name: "Shahrukh Alam",
@@ -54,14 +54,14 @@ export default function Reviews() {
           </motion.h2>
 
           <div className="flex items-center gap-4 border border-iron px-6 py-4">
-            <span className="font-display text-4xl text-blood">4.7</span>
+            <span className="font-display text-4xl text-blood">4.666</span>
             <div>
               <div className="flex gap-0.5">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star key={i} size={14} className="fill-blood text-blood" />
                 ))}
               </div>
-              <p className="mt-1 text-xs text-ash">From 35 Google reviews</p>
+              <p className="mt-1 text-xs text-ash">From Google reviews</p>
             </div>
           </div>
         </div>

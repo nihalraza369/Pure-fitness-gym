@@ -5,8 +5,8 @@ import { MapPin, Phone, Clock } from "lucide-react";
 
 export default function Location() {
   const address =
-    "A-43 Own Ctr Rd, near Noman Complex, Block 13D-3, Gulshan-e-Iqbal, Karachi, 75300";
-  const mapsQuery = encodeURIComponent("Pure Fitness Gym Branch 3 Gulshan-e-Iqbal Karachi");
+    "13 Main bazar mustafa abad, Mustafabad, Lahore";
+  const mapsQuery = encodeURIComponent("Fitness Demon Mustafabad Lahore");
 
   return (
     <section id="location" className="bg-ink px-6 py-24 md:px-10 md:py-32">
@@ -20,7 +20,7 @@ export default function Location() {
         >
           FIND US ON
           <br />
-          <span className="text-blood">13-D/3.</span>
+          <span className="text-blood">MUSTAFABAD.</span>
         </motion.h2>
 
         <div className="grid gap-10 md:grid-cols-[0.85fr_1.15fr]">
@@ -49,10 +49,10 @@ export default function Location() {
                     PHONE
                   </p>
                   <a
-                    href="tel:03352846360"
+                    href="tel:03008141533"
                     className="text-sm text-ash transition-colors hover:text-bone"
                   >
-                    0335 2846360
+                    0300 8141533
                   </a>
                 </div>
               </div>
@@ -64,9 +64,11 @@ export default function Location() {
                     HOURS
                   </p>
                   <p className="text-sm text-ash">
-                    Mon–Sat, 7 AM – 1 AM
+                    Mon-Tue: Open 24 hours
                     <br />
-                    Sunday, Closed
+                    Wed-Sat: 6 AM – 12 AM
+                    <br />
+                    Sunday: Closed
                   </p>
                 </div>
               </div>
@@ -90,7 +92,7 @@ export default function Location() {
             className="min-h-[360px] overflow-hidden border border-iron"
           >
             <iframe
-              title="Pure Fitness Gym location map"
+              title="Fitness Demon location map"
               src={`https://www.google.com/maps?q=${mapsQuery}&output=embed`}
               className="h-full min-h-[360px] w-full grayscale invert-[0.92] contrast-[1.1]"
               loading="lazy"

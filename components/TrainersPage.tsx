@@ -18,13 +18,13 @@ import Trainers from "@/components/Trainers";
 import Timings from "@/components/Timings";
 import { WhatsAppIcon } from "@/components/Products";
 
-const PHONE = "0335 2846360";
+const PHONE = "0300 8141533";
 
 const BEST_TIMES = [
   {
     icon: Sun,
     title: "Morning · Subah",
-    window: "7 AM – 12 PM",
+    window: "6 AM – 12 PM",
     points: [
       "Fresh and full of energy — best for heavy lifting",
       "Gym is quiet, machines and weights are free",
@@ -35,7 +35,7 @@ const BEST_TIMES = [
   {
     icon: Moon,
     title: "Night · Raat",
-    window: "6 PM – 1 AM",
+    window: "6 PM – 12 AM",
     points: [
       "Perfect after work or college — no rush",
       "Releases the stress of the day",
@@ -55,7 +55,7 @@ export default function TrainersPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/boys-hero.jpg"
-            alt="Trainers and coaching at Pure Fitness Gym"
+            alt="Trainers and coaching at Fitness Demon"
             fill
             priority
             sizes="100vw"
@@ -106,11 +106,11 @@ export default function TrainersPage() {
               <p className="flex items-start gap-3">
                 <Clock size={18} className="mt-0.5 shrink-0 text-blood" />
                 Girls&rsquo; floor 12 PM – 6 PM. Boys&rsquo; floor the rest of
-                the day, 7 AM – 1 AM.
+                the day, 6 AM – 12 AM.
               </p>
               <p className="flex items-start gap-3">
                 <Phone size={18} className="mt-0.5 shrink-0 text-blood" />
-                <a href="tel:03352846360" className="hover:text-bone">
+                <a href="tel:03008141533" className="hover:text-bone">
                   {PHONE}
                 </a>
               </p>
@@ -199,7 +199,7 @@ export default function TrainersPage() {
                 </div>
               </div>
               <a
-                href="https://wa.me/923352846360?text=Salam%20Pure%20Fitness%20Gym!%20I%20want%20to%20ask%20about%20training%20timings."
+                href="https://wa.me/923008141533?text=Salam%20Fitness%20Demon!%20I%20want%20to%20ask%20about%20training%20timings."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex shrink-0 items-center gap-2 bg-blood px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-bone transition-colors hover:bg-ember"

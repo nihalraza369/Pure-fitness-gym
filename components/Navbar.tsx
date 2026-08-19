@@ -16,7 +16,7 @@ import {
 import { WhatsAppIcon } from "@/components/Products";
 
 const WA_LINK =
-  "https://wa.me/923352846360?text=Salam%20Pure%20Fitness%20Gym!%20I%20want%20to%20ask%20about%20membership.";
+  "https://wa.me/923008141533?text=Salam%20Fitness%20Demon!%20I%20want%20to%20ask%20about%20membership.";
 
 const LINKS = [
   { label: "Services", href: "/#services", section: "services" },
@@ -98,21 +98,17 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5">
               <MapPin size={13} className="text-blood" />
-              Gulshan-e-Iqbal, Block 13-D/3, Karachi
+              13 Main bazar mustafa abad, Mustafabad, Lahore
             </span>
             <span className="flex items-center gap-1.5">
               <Clock size={13} className="text-blood" />
-              Mon–Sat, 7 AM – 1 AM
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Dumbbell size={13} className="text-blood" />
-              Ladies 12 PM – 6 PM
+              Mon-Tue 24h · Wed-Sat 6 AM – 12 AM
             </span>
           </div>
           <span className="flex items-center gap-1.5 font-semibold text-bone">
             <Phone size={13} className="text-blood" />
-            <a href="tel:03352846360" className="transition-colors hover:text-blood">
-              0335 2846360
+            <a href="tel:03008141533" className="transition-colors hover:text-blood">
+              0300 8141533
             </a>
           </span>
         </div>
@@ -127,10 +123,10 @@ export default function Navbar() {
         }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3.5 md:px-10">
-          <a href="/" className="flex shrink-0 items-center" aria-label="Pure Fitness Gym home">
+          <a href="/" className="flex shrink-0 items-center" aria-label="Fitness Demon home">
             <Image
               src="/purefitnesslogo.png"
-              alt="Pure Fitness Gym"
+              alt="Fitness Demon"
               width={1423}
               height={1105}
               priority
@@ -173,11 +169,11 @@ export default function Navbar() {
               <WhatsAppIcon size={18} />
             </a>
             <a
-              href="tel:03352846360"
+              href="tel:03008141533"
               className="flex items-center gap-2 text-sm font-semibold text-bone transition-colors hover:text-blood"
             >
               <Phone size={16} className="text-blood" />
-              0335 2846360
+              0300 8141533
             </a>
             <a
               href="/#location"
@@ -191,8 +187,8 @@ export default function Navbar() {
           {/* Tablet nav (xl and below) — hamburger */}
           <div className="flex items-center gap-3 xl:hidden">
             <a
-              href="tel:03352846360"
-              aria-label="Call Pure Fitness Gym"
+              href="tel:03008141533"
+              aria-label="Call Fitness Demon"
               className="flex h-10 w-10 items-center justify-center rounded-sm border border-iron text-bone md:hidden"
             >
               <Phone size={18} className="text-blood" />
@@ -246,11 +242,11 @@ export default function Navbar() {
 
               <div className="mt-5 flex flex-col gap-3">
                 <a
-                  href="tel:03352846360"
+                  href="tel:03008141533"
                   className="flex items-center justify-center gap-2 rounded-sm border border-iron px-5 py-3.5 text-sm font-semibold text-bone"
                 >
                   <Phone size={16} className="text-blood" />
-                  0335 2846360
+                  0300 8141533
                 </a>
                 <a
                   href={WA_LINK}
@@ -271,7 +267,7 @@ export default function Navbar() {
                 </a>
                 <p className="mt-2 flex items-center justify-center gap-1.5 text-xs text-ash">
                   <MapPin size={13} className="text-blood" />
-                  Block 13-D/3, Gulshan-e-Iqbal, Karachi
+                  13 Main bazar mustafa abad, Mustafabad, Lahore
                 </p>
               </div>
             </div>

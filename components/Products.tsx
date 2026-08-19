@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Flame } from "lucide-react";
 
-const WHATSAPP_NUMBER = "923352846360";
+const WHATSAPP_NUMBER = "923008141533";
 
 export function WhatsAppIcon({ size = 16 }: { size?: number }) {
   return (
@@ -22,7 +22,7 @@ export function WhatsAppIcon({ size = 16 }: { size?: number }) {
 
 function waLink(name: string) {
   const msg = encodeURIComponent(
-    `Salam Pure Fitness Gym! I want to order: ${name}`
+    `Salam Fitness Demon! I want to order: ${name}`
   );
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
 }

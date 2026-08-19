@@ -47,7 +47,7 @@ const POINTS = [
   {
     icon: Clock,
     title: "Open floor, all day",
-    body: "7 AM to 1 AM, six days a week — 18 hours every single day. An open first floor for your own cardio or warm-up and a full weights area, so you can train before work, after work or late at night without ever rushing.",
+    body: "Open 24 hours Mon-Tue, and 6 AM to 12 AM Wed-Sat. An open first floor for your own cardio or warm-up and a full weights area, so you can train before work, after work or late at night without ever rushing.",
   },
   {
     icon: Dumbbell,
@@ -57,7 +57,7 @@ const POINTS = [
   {
     icon: Users,
     title: "Built for the whole family",
-    body: "Two dedicated floors — men's and ladies' — each with its own coaches and timings (ladies 12 PM–6 PM, men the rest of the day). Plus a youth program for younger lifters, so the entire family trains under one roof.",
+    body: "Two dedicated floors — men's and ladies' — each with its own coaches and timings (ladies 12 PM–6 PM, men the rest of the day). Plus a youth program for younger lifters, so the entire family trains under one roof. Open 24 hours Mon-Tue.",
   },
   {
     icon: ShieldCheck,
@@ -123,7 +123,7 @@ export default function WhyUs() {
           <div className="absolute -bottom-8 left-1/2 flex w-[92%] -translate-x-1/2 items-stretch divide-x divide-iron border border-iron bg-ink/95 backdrop-blur sm:w-[85%]">
             <div className="flex-1 px-3 py-5 text-center sm:px-5 sm:py-6">
               <p className="font-display text-2xl text-blood sm:text-3xl md:text-4xl">
-                <Counter to={4.7} decimals={1} />
+                <Counter to={4.666} decimals={3} />
               </p>
               <p className="mt-1 text-[10px] uppercase tracking-wider text-ash sm:text-xs">
                 Google Rating
@@ -131,10 +131,10 @@ export default function WhyUs() {
             </div>
             <div className="flex-1 px-3 py-5 text-center sm:px-5 sm:py-6">
               <p className="font-display text-2xl text-blood sm:text-3xl md:text-4xl">
-                <Counter to={18} suffix="h" />
+                24h
               </p>
               <p className="mt-1 text-[10px] uppercase tracking-wider text-ash sm:text-xs">
-                Open Daily
+                Mon & Tue
               </p>
             </div>
             <div className="flex-1 px-3 py-5 text-center sm:px-5 sm:py-6">

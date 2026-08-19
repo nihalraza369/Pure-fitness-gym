@@ -8,14 +8,14 @@ export default function Footer() {
         <div>
           <Image
             src="/purefitnesslogo.png"
-            alt="Pure Fitness Gym"
+            alt="Fitness Demon"
             width={1423}
             height={1105}
             className="h-14 w-auto"
           />
           <p className="mt-4 max-w-xs text-sm text-ash">
-            Gulshan-e-Iqbal&rsquo;s home for weightlifting, CrossFit and
-            class-based training. Branch 3.
+            Mustafabad&rsquo;s home for weightlifting, CrossFit and
+            class-based training.
           </p>
           <div className="mt-5 flex gap-4">
             <a
@@ -56,11 +56,11 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-ash">
               <li className="flex items-start gap-2">
                 <Phone size={15} className="mt-0.5 shrink-0 text-blood" />
-                0335 2846360
+                0300 8141533
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={15} className="mt-0.5 shrink-0 text-blood" />
-                Block 13-D/3, Gulshan-e-Iqbal, Karachi
+                13 Main bazar mustafa abad, Mustafabad, Lahore
               </li>
             </ul>
           </div>
@@ -68,7 +68,7 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto mt-12 max-w-7xl border-t border-iron pt-6 text-xs text-ash">
-        © {new Date().getFullYear()} Pure Fitness Gym. All rights reserved.
+        © {new Date().getFullYear()} Fitness Demon. All rights reserved.
       </div>
     </footer>
   );

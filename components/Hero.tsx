@@ -5,31 +5,35 @@ import { motion } from "framer-motion";
 import { MapPin, Star, Clock, Dumbbell } from "lucide-react";
 import { WhatsAppIcon } from "@/components/Products";
 
-// Gym hours: Mon–Sat 7am–1am (next day), Sunday closed
+// Gym hours: Mon-Tue 24h, Wed-Sat 6am-12am, Sunday closed
 function getOpenStatus() {
   const now = new Date();
-  const day = now.getDay(); // 0 = Sunday
+  const day = now.getDay(); // 0 = Sunday, 1 = Monday, 2 = Tuesday, etc.
   const hour = now.getHours();
   const minute = now.getMinutes();
   const minutesNow = hour * 60 + minute;
-
-  const openTime = 7 * 60; // 7:00 AM
-  const closeTime = 60; // 1:00 AM (past midnight)
 
   if (day === 0) {
     return { open: false, label: "Closed today" };
   }
 
-  // Open if it's past 7 AM, or it's still before 1 AM (i.e. yesterday's session)
-  const withinWindow = minutesNow >= openTime || minutesNow < closeTime;
-  return {
-    open: withinWindow,
-    label: withinWindow ? "Open now · Closes 1 AM" : "Opens 7 AM",
-  };
+  // Monday (1) and Tuesday (2) — open 24 hours
+  if (day === 1 || day === 2) {
+    return { open: true, label: "Open 24 hours" };
+  }
+
+  // Wednesday (3) to Saturday (6) — 6am to 12am (midnight)
+  const openTime = 6 * 60; // 6:00 AM
+  const closeTime = 24 * 60; // 12:00 AM (midnight = end of day)
+
+  if (minutesNow >= openTime && minutesNow < closeTime) {
+    return { open: true, label: "Open now · Closes 12 AM" };
+  }
+  return { open: false, label: "Opens 6 AM" };
 }
 
 const STATS = [
-  { value: "18h", label: "Open Daily" },
+  { value: "24h", label: "Open Mon-Tue" },
   { value: "6", label: "Coaches" },
   { value: "11", label: "Programs" },
   { value: "4.7★", label: "Google Rating" },
@@ -55,7 +59,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=2000&q=80"
-          alt="Weight rack inside Pure Fitness Gym"
+          alt="Weight rack inside Fitness Demon"
           className="h-full w-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/30" />
@@ -90,7 +94,7 @@ export default function Hero() {
         >
           <Dumbbell size={15} className="text-blood" />
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-bone">
-            Pure Fitness Gym · Branch 3
+            Fitness Demon
           </span>
         </motion.div>
 
@@ -101,17 +105,17 @@ export default function Hero() {
           className="mb-5 flex flex-wrap items-center gap-2 text-sm text-ash"
         >
           <MapPin size={16} className="text-blood" />
-          Gulshan-e-Iqbal, Block 13-D/3, Karachi
+          13 Main bazar mustafa abad, Mustafabad, Lahore
           <span className="mx-1 text-iron">·</span>
           <span className="flex items-center gap-1 text-bone">
             <Star size={14} className="fill-blood text-blood" />
-            4.7
+            4.666
           </span>
-          <span className="text-ash">(35 reviews)</span>
+          <span className="text-ash">(Google reviews)</span>
           <span className="mx-1 hidden text-iron sm:inline">·</span>
           <span className="hidden items-center gap-1 sm:flex">
             <Clock size={14} className="text-blood" />
-            Mon–Sat, 7 AM – 1 AM
+            Mon-Tue 24h · Wed-Sat 6 AM – 12 AM
           </span>
         </motion.div>
 
@@ -136,7 +140,7 @@ export default function Hero() {
         >
           <p className="max-w-md text-base text-ash md:text-lg">
             Weightlifting, CrossFit, Zumba, and personal training under one
-            roof — open 7 AM to 1 AM, every day but Sunday. Two dedicated
+            roof — open 24 hours Mon-Tue, 6 AM to 12 AM Wed-Sat. Two dedicated
             floors with real coaches who push you forward.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -153,7 +157,7 @@ export default function Hero() {
               See Programs
             </a>
             <a
-              href="https://wa.me/923352846360?text=Salam%20Pure%20Fitness%20Gym!%20I%20want%20to%20know%20about%20membership."
+              href="https://wa.me/923008141533?text=Salam%20Fitness%20Demon!%20I%20want%20to%20know%20about%20membership."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-sm border border-emerald-500/40 bg-emerald-500/10 px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-bone backdrop-blur transition-colors hover:bg-emerald-500/20"
