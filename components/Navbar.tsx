@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -124,14 +123,9 @@ export default function Navbar() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3.5 md:px-10">
           <a href="/" className="flex shrink-0 items-center" aria-label="Fitness Demon home">
-            <Image
-              src="/purefitnesslogo.png"
-              alt="Fitness Demon"
-              width={1423}
-              height={1105}
-              priority
-              className="h-12 w-auto md:h-14"
-            />
+            <span className="font-display text-2xl tracking-wider text-bone md:text-3xl">
+              FITNESS <span className="text-blood">DEMON</span>
+            </span>
           </a>
 
           <nav className="hidden items-center gap-7 xl:flex">

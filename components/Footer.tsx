@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Instagram, Facebook, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
@@ -6,13 +5,9 @@ export default function Footer() {
     <footer className="border-t border-iron bg-ink px-6 py-14 md:px-10">
       <div className="mx-auto flex max-w-7xl flex-col gap-10 md:flex-row md:items-start md:justify-between">
         <div>
-          <Image
-            src="/purefitnesslogo.png"
-            alt="Fitness Demon"
-            width={1423}
-            height={1105}
-            className="h-14 w-auto"
-          />
+          <span className="font-display text-2xl tracking-wider text-bone">
+            FITNESS <span className="text-blood">DEMON</span>
+          </span>
           <p className="mt-4 max-w-xs text-sm text-ash">
             Mustafabad&rsquo;s home for weightlifting, CrossFit and
             class-based training.
