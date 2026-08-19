@@ -123,7 +123,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-          className="font-display text-[15vw] leading-[0.85] tracking-tight text-bone md:text-[8.5vw]"
+          className="font-display text-[13vw] leading-[1.1] tracking-tight text-bone sm:text-[11vw] md:text-[8vw] md:leading-[1.05]"
         >
           TRAIN
           <br />
