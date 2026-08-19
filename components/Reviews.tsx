@@ -5,34 +5,54 @@ import { Star } from "lucide-react";
 
 const TESTIMONIALS = [
   {
-    name: "Muhammad Ahmad",
-    tag: "Local Guide",
-    body: "Clean, affordable, and there's a whole open floor upstairs if you'd rather run your own cardio or warm-up routine.",
+    name: "Jordan Josh",
+    tag: "Local Guide · 34 reviews",
+    body: "It is a good place to do some workout, and get your body in shape. Mr Asim Raza is the trainer here, he is Mr Pakistan Title holder and two times Mr Punjab. Gym has each and every basic machine that you need in a gym, and fee is also affordable.",
   },
   {
-    name: "Hamza Ali",
-    tag: "Member, 1 month",
-    body: "The equipment and ambiance are on point, and the trainers know what they're talking about. No regrets joining.",
+    name: "Asif Muhammad",
+    tag: "Local Guide · 4 reviews",
+    body: "New Machinery, well maintained, neat and clean, fit ac, trainer coach also available and very nicely guide you about any exercise plus nutrition.",
   },
   {
-    name: "Hameed Ullah",
-    tag: "Member since day one",
-    body: "The best value gym in Mustafabad — good atmosphere that works well for both male and female members.",
+    name: "Nouman Mirza",
+    tag: "Local Guide · 24 reviews",
+    body: "Good equipment and good people also and the most important thing it is very affordable and the mission fitness is on. Stay motivated.",
   },
   {
-    name: "Shahrukh Alam",
-    tag: "Local Guide",
-    body: "Top-notch equipment and an interior that actually feels considered. One of the better gyms in the block.",
+    name: "Abdul Haseeb",
+    tag: "Local Guide · 19 reviews",
+    body: "V Good experience and also good environment. New Machinery and well maintained gym.",
   },
   {
-    name: "Salik Hassan",
-    tag: "Local Guide",
-    body: "Equipment is kept in good shape and the staff are well-mannered. Would send a friend here.",
+    name: "Ahmad Bhatti",
+    tag: "5 reviews",
+    body: "Superb Gym and has a good staff and clean environment.",
   },
   {
-    name: "Haseeb Memon",
-    tag: "Member",
-    body: "Solid gym for the price — you won't find better rates for this quality of setup nearby.",
+    name: "Zohaib Ashraf",
+    tag: "Local Guide · 13 reviews",
+    body: "Nice environment and they give me the student discount also recommend.",
+  },
+  {
+    name: "Zohaib Hassan",
+    tag: "5 reviews",
+    body: "Best gym in my town.",
+  },
+  {
+    name: "TARIQ NIZAM GILLANI",
+    tag: "Local Guide · 20 reviews",
+    body: "It's a good place for exercise.",
+  },
+  {
+    name: "Science Lectures",
+    tag: "5 reviews",
+    body: "Best gym in area.",
+  },
+  {
+    name: "Shozi Hafeez",
+    tag: "4 reviews",
+    body: "Good looking gym.",
   },
 ];
 
@@ -50,7 +70,7 @@ export default function Reviews() {
           >
             WHAT MEMBERS
             <br />
-            SAY.
+            <span className="text-blood">SAY.</span>
           </motion.h2>
 
           <div className="flex items-center gap-4 border border-iron px-6 py-4">

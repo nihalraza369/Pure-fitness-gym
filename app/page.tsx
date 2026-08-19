@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import Services from "@/components/Services";
-import Trainers from "@/components/Trainers";
 import Timings from "@/components/Timings";
 import Products from "@/components/Products";
 import WhyUs from "@/components/WhyUs";
@@ -17,11 +16,10 @@ export default function Home() {
       <Hero />
       <Marquee />
       <Services />
-      <Trainers />
-      <Timings />
       <Products />
-      <WhyUs />
       <Reviews />
+      <WhyUs />
+      <Timings />
       <Location />
       <Footer />
     </main>
