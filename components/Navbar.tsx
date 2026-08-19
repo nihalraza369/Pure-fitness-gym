@@ -19,8 +19,8 @@ const WA_LINK =
 
 const LINKS = [
   { label: "Services", href: "/#services", section: "services" },
-  { label: "Trainers", href: "/trainers", section: null },
   { label: "Products", href: "/#products", section: "products" },
+  { label: "Reviews", href: "/#reviews", section: "reviews" },
   { label: "Why Us", href: "/#why", section: "why" },
   { label: "Timings", href: "/#hours", section: "hours" },
   { label: "Location", href: "/#location", section: "location" },
